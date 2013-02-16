@@ -10,7 +10,7 @@ function harlemshake() {
   function removeAddedCSS() {
     var added = document.getElementsByClassName(addedCSS);
     for (var i = 0; i < added.length; i++) {
-      document.body.removeChild(added[t])
+      document.body.removeChild(added[i])
     }
   }
   function p() {
