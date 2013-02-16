@@ -4,3 +4,7 @@
 *.pot
 *.pyc
 local_settings.py
+
+#Mac
+#===
+.DS_Store
