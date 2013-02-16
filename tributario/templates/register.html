@@ -8,7 +8,7 @@
 	
 	{% csrf_token %}
 
-	{{ form_register }}
+	{{ form_register.as_p }}
 
 	<input type="submit" value="Registrar">
 

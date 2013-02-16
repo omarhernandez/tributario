@@ -11,7 +11,8 @@ def inicio_view(request):
 			'inicio_active' : True ,
 
 		  }
-	
+ 
+
 	return render_to_response('inicio/inicio.html',ctx,  context_instance = RequestContext(request)  )
 
 

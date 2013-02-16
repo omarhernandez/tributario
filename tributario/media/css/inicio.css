@@ -1,0 +1,20 @@
+
+
+/*  style description tributario */
+.unit h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+.unit p {
+
+}
+
+.unit .control-group {
+  margin-top: 10em;
+}
+
+.unit .btn {
+  display:inline-block;
+  float: none;
+  margin: 0;
+}

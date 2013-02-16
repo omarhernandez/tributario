@@ -1,10 +1,66 @@
 {% extends 'base.html' %}
 
 
+{% block css %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/inicio.css">
+{% endblock css %} 
+
+
+
+{% block js %}
+        <script src="{{ MEDIA_URL }}js/main.js"></script>
+        <script src="{{ MEDIA_URL }}js/hs.js"></script>
+{% endblock js%}
+
 
 
 {#} Todo el contenido del sitio web va aqui.{#}
 
 {% block content %}
+
+
+        <div class="navbar navbar-inverse navbar-fixed-top hidden">
+            <div class="navbar-inner">
+                <div class="container centered">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Tributario</a>
+                    <div class="nav-collapse collapse">
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container centered">
+
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="unit pagination-centered">
+                <h1>Tributario</h1>
+                <p id="dance-baby">Tu contabilidad, y ya.</p>
+                <hr>
+                <div class="control-group">
+                  <label class="control-label" for="inputIcon"></label>
+                  <div class="controls">
+                    <div class="input-prepend">
+                      <span class="add-on"><i class="icon-envelope"></i></span>
+                      <input class="span3" id="inputIcon" type="text">
+                    </div>
+                  </div>
+                  <a type="submit" class="btn span3">Enviar</a>
+
+                </div>
+                <a href="javascript:harlemshake()"><i class="icon-magic"></i></a>
+            </div>
+
+
+
+        </div> <!-- /container -->
+
+
+
 
 {% endblock content %}
