@@ -3,12 +3,35 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
 
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+from django.http import HttpResponse
 
-def register_user(request):
+
+def  registro_view(request):
+
+
+	create_register_user =  UserCreationForm(request.POST)
+
+
+	ctx = {
+
+			'form_register' : create_register_user ,
+
+		  }
 	
-	if request.method == "POST"
+	return render_to_response('inicio/inicio.html',ctx,  context_instance = RequestContext(request)  )
 
-		create_register_user = UserCreateForm(request.POST)
+
+
+# ----------------------------------------------------------------------------------------------------------
+
+
+def validate_register_form(request):
+	
+	if request.method == "POST":
+
+		create_register_user = UserCreationForm(request.POST)
 
 		if create_register_user.is_valid(): 
 		#Si es validando
@@ -20,7 +43,7 @@ def register_user(request):
 		else:
 		#No es valido los datos
 
-			create_register_user = UserCreateForm();
+			create_register_user = UserCreationForm();
 
 			return render_to_response('register.html',{'register_form' : create_register_user  } ,context_instance = RequestContext(request))
 

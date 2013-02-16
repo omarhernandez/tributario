@@ -11,6 +11,8 @@ urlpatterns = patterns('',
 
 	url(r'^' , include('apps.inicio.urls')) , 
 
+    url(r'^' , include('apps.register.urls')) , 
+
     # Examples:
     # url(r'^$', 'tributario.views.home', name='home'),
     # url(r'^tributario/', include('tributario.foo.urls')),
