@@ -1,0 +1,12 @@
+
+<h1>Registrate:</h1>
+
+<form action="" method="POST" id="register-user">
+	
+	{% csrf_token %}
+
+	{{ form_register.as_p }}
+
+	<input type="submit" value="Registrar">
+
+</form> 
