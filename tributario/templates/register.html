@@ -2,17 +2,282 @@
 
 {% block content %}
 
-<h1>Registrate:</h1>
-
-<form action="" method="POST" id="register-user">
+<style>
 	
-	{% csrf_token %}
+table{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}	
 
-	{{ form_register.as_p }}
+#main_app > section {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
 
-	<input type="submit" value="Registrar">
 
-</form> 
+.lst-data td {
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-top: 9px;
+}
 
+#logo , #info_company , #datos_recibo {
+ 
+
+}
+
+.fl{
+	float: left;
+}
+
+
+
+.fl.data_total {
+    width: 30%;
+}
+
+
+.fl.import_add_data {
+    width: 70%;
+}
+
+.lst-data {
+    width: 90%;
+}
+
+</style>
+
+
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+{#} !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! {#}
+
+<section>
+
+{#} ------------ Header ---------------------------------- {#}
+
+
+<table cellpadding="1" border="1">
+	<tbody><tr>
+		<th>Logo</th>
+		<th>Freelancer</th>		
+		<th>Datos Recibo</th>
+	 
+	</tr>
+	<tr>
+		<td id="logo">Jill</td>
+		<td id="info_company">Smith</td>		
+		<td id="datos_recibo">50</td>
+	</tr>
+ 
+</tbody></table>
+
+
+	{#} ---------------------------------------------------- {#}
+
+ 
+
+{#} --------------- data client ----------------------------------- {#}
+
+
+<section>
+	<article id="datos_cliente">
+		
+
+
+
+	</article>
+</section>
+
+
+{#} ----------------- PLACE ---------------------------- {#}
+
+
+<div id="expedicion_lugar"></div>
+
+{#} --------------------- $$$$$ DATA---------------------------- {#}
+
+
+ 
+<table cellpadding="5" border="1">
+	<tbody>
+
+	<tr>
+		<th>Cantidad</th>
+		<th>Código</th>		
+		<th>Descripcion</th>
+		<th>P.Unitario</th>
+		<th>Importe</th>
+	</tr>
+
+
+
+	<tr>
+				<td class="Cantidad" > </td>
+				<td class="Codigo" > </td>		
+				<td class="Descripcion" > </td>
+				<td class="Unitario" > </td>
+				<td class="Importe" > </td>
+	</tr>
+
+	<tr>
+				<td class="Cantidad" > </td>
+				<td class="Codigo" > </td>		
+				<td class="Descripcion" > </td>
+				<td class="Unitario" > </td>
+				<td class="Importe" > </td>
+
+	</tr>
+
+	<tr>
+
+				<td class="Cantidad" > </td>
+				<td class="Codigo" > </td>		
+				<td class="Descripcion" > </td>
+				<td class="Unitario" > </td>
+				<td class="Importe" > </td>
+
+	</tr>
+
+	<tr>
+
+				<td class="Cantidad" > </td>
+				<td class="Codigo" > </td>		
+				<td class="Descripcion" > </td>
+				<td class="Unitario" > </td>
+				<td class="Importe" > </td>
+
+	</tr>
+
+		<tr>
+
+
+				<td class="Cantidad" > </td>
+				<td class="Codigo" > </td>		
+				<td class="Descripcion" > </td>
+				<td class="Unitario" > </td>
+				<td class="Importe" > </td>
+
+
+	 	</tr>
+</tbody></table>
+
+<article class="fl import_add_data ">
+{#} - -------------------IMPORTE CON LETRA---------------------- {#}
+
+
+<table cellpadding="1" border="1">
+	<tbody>
+		<tr>
+		<th>Importe Con Letra</th>
+	 
+	 
+	</tr>
+
+	<tr>
+		<td id="logo">Letra del ...</td>
+ 
+	</tr>
+ 
+</tbody></table>
+ 
+
+ {#} - -----------------OBSERVACIONES ------------------------- {#}
+
+
+<table cellpadding="1" border="1">
+	<tbody>
+		<tr>
+		<th>Observaciones</th>
+	 
+	 
+	</tr>
+
+	<tr>
+		<td id="logo">ejemplo comprobante de ....</td>
+ 
+	</tr>
+ 
+</tbody></table>
+
+</article>
+
+ {#} - ----------------- TOTAL  ------------------------- {#}
+
+ <article  class="fl data_total">
+ 	
+
+<table cellpadding="1" border="1">
+	<tbody>
+	
+	<tr>
+		<th>Subtotal</th>
+		<td id="logo">$ 0.0</td>
+	 
+	 
+	</tr>
+
+	<tr>
+		<th>I.V.A</th>
+		<td id="logo">$ 0.0</td>
+ 
+	</tr>
+
+		<tr>
+		<th>Total</th>
+		<td id="logo">$ 0.0</td>
+ 
+	</tr>
+ 
+ 
+</tbody></table>
+
+
+
+ </article>
+
+{#} ----------------------------------------------------------- {#}
+
+
+<table cellpadding="2" border="1" class="lst-data">
+	<tbody>
+	
+	<tr>
+		<td>Nombre </td>
+		<td id="logo">Firma</td>
+	 
+	 
+	</tr>
+
+	<tr>
+		<td>Nombre de la empresa</td>
+		<td id="logo"> </td>
+ 
+	</tr>
+
+ 
+ 
+ 
+</tbody></table>
+
+
+
+
+
+</section>
 
 {% endblock content %}
+
+
+
+

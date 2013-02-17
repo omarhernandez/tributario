@@ -20,7 +20,7 @@ header > ul li{
 
 
    float: left;
-    list-style: none outside none;
+  
     padding-bottom: 25px;
     padding-left: 21px;
     padding-top: 25px;
@@ -78,4 +78,9 @@ footer {
   bottom: 0;
   border-top: 1px solid #EEE;
   padding-top: 1em;
+}
+
+
+li{
+    list-style: none ;
 }
